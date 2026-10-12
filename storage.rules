@@ -3,13 +3,14 @@ service firebase.storage {
   match /b/{bucket}/o {
     function isOwner() {
       return request.auth != null
-        && request.auth.token.email == 'REPLACE_WITH_OWNER_EMAIL';
+        && request.auth.token.email == 'sunnybarman7890@gmail.com';
     }
     match /products/{fileName} {
       allow read: if true;
-      allow write: if isOwner()
+      allow create, update: if isOwner()
         && request.resource.size < 5 * 1024 * 1024
         && request.resource.contentType.matches('image/.*');
+      allow delete: if isOwner();
     }
   }
 }

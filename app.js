@@ -11,7 +11,8 @@ const demoProducts = [
  {id:"demo-2",name:"A Little Happiness Gift Box",price:1299,category:"Gift Sets",sizes:"",description:"A thoughtful little gift box.",image:"https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80",demo:true},
  {id:"demo-3",name:"Aesthetic Ceramic Mug",price:499,category:"Mugs & Drinkware",sizes:"",description:"A sweet mug for everyday moments.",image:"https://images.unsplash.com/photo-1514228742587-6b1558f2d9e2?auto=format&fit=crop&w=600&q=80",demo:true},
  {id:"demo-4",name:"Bear Keychain",price:299,category:"Accessories",sizes:"",description:"A tiny companion for your keys.",image:"https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=600&q=80",demo:true},
- {id:"demo-5",name:"Mini Plant with Cute Pot",price:349,category:"Home Decor",sizes:"",description:"A fresh little touch for your desk.",image:"https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80",demo:true}
+ {id:"demo-5",name:"Mini Plant with Cute Pot",price:349,category:"Home Decor",sizes:"",description:"A fresh little touch for your desk.",image:"https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80",demo:true},
+ {id:"demo-6",name:"Collectible Action Figure",price:999,category:"Action Figures",sizes:"",description:"A collectible figure for fans and collectors. Demo item — replace with your real product.",image:"https://images.unsplash.com/photo-1608889175123-8ee362201f81?auto=format&fit=crop&w=600&q=80",demo:true}
 ];
 const $ = id => document.getElementById(id);
 let app, auth, db, storage, firebaseReady=false, owner=null, products=[], cart=JSON.parse(localStorage.getItem("craftopia-cart")||"[]"), activeCategory="All";

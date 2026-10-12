@@ -40,11 +40,12 @@
     <button class="category" data-category="Accessories"><span class="category-art art-5">♡</span>Accessories</button>
     <button class="category" data-category="Mugs & Drinkware"><span class="category-art art-6">☕</span>Mugs & Drinkware</button>
     <button class="category" data-category="Gift Sets"><span class="category-art art-7">🎁</span>Gift Sets</button>
+    <button class="category" data-category="Action Figures"><span class="category-art art-8">🦸</span>Action Figures</button>
   </section>
 
   <section class="shop-section" id="shop">
     <div class="section-heading"><div><h2>Featured collection ♡</h2><p>Handpicked with love ♡</p></div><span class="product-total" id="productTotal">0 products</span></div>
-    <div class="filter-row"><select id="categoryFilter" aria-label="Filter category"><option value="All">All categories</option><option>Cute Gifts</option><option>Home Decor</option><option>Stationery</option><option>Accessories</option><option>Mugs & Drinkware</option><option>Gift Sets</option></select><select id="sortFilter" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A–Z</option></select></div>
+    <div class="filter-row"><select id="categoryFilter" aria-label="Filter category"><option value="All">All categories</option><option>Cute Gifts</option><option>Home Decor</option><option>Stationery</option><option>Accessories</option><option>Mugs & Drinkware</option><option>Gift Sets</option><option>Action Figures</option></select><select id="sortFilter" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A–Z</option></select></div>
     <div class="product-grid" id="productGrid"><div class="empty-state">Loading the little things…</div></div>
   </section>
 
@@ -94,7 +95,7 @@
     <div id="adminPanel" hidden>
       <hr><h3>Add a product</h3>
       <label>Product name<input id="productName" required maxlength="100" placeholder="e.g. Cute Bunny Night Lamp"></label>
-      <div class="two-fields"><label>Price (₹)<input id="productPrice" type="number" min="0" step="1" required placeholder="799"></label><label>Category<select id="productCategory"><option>Cute Gifts</option><option>Home Decor</option><option>Stationery</option><option>Accessories</option><option>Mugs & Drinkware</option><option>Gift Sets</option></select></label></div>
+      <div class="two-fields"><label>Price (₹)<input id="productPrice" type="number" min="0" step="1" required placeholder="799"></label><label>Category<select id="productCategory"><option>Cute Gifts</option><option>Home Decor</option><option>Stationery</option><option>Accessories</option><option>Mugs & Drinkware</option><option>Gift Sets</option><option>Action Figures</option></select></label></div>
       <label>Available sizes (optional)<input id="productSizes" placeholder="Small, Medium, Large"></label>
       <label>Product image<input id="productImage" type="file" accept="image/*" required></label>
       <label>Short description<textarea id="productDescription" rows="2" placeholder="A little detail about this gift…"></textarea></label>
