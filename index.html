@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7efe5">
+  <title>Craftopia Assam | Gifts • Stories • Smiles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#"><img src="logo-placeholder.png" alt="" onerror="this.style.display='none'"><span class="brand-name">Craftopia</span><small>GIFTS · STORIES · SMILES</small></a>
+  <label class="search"><span>⌕</span><input id="searchInput" placeholder="Search gifts, home decor, accessories…" aria-label="Search products"></label>
+  <nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <button class="cart-button" id="cartOpen" aria-label="Open cart">♡ <span id="cartCount">0</span></button>
+  <button class="owner-button" id="ownerOpen">Owner</button>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <span class="eyebrow">♡ &nbsp; WELCOME TO</span>
+      <h1>Craftopia<span>♥</span></h1>
+      <p class="hero-lead">Thoughtful Gifts for Every Moment</p>
+      <p>Explore unique, cute and meaningful gifts that make life a little more special.</p>
+      <a class="primary-button" href="#shop">Shop Now <span>→</span></a>
+    </div>
+    <div class="hero-image" role="img" aria-label="Warm gift box with ribbon, candles and flowers"></div>
+    <div class="hero-note">Good<br>Things<br>Inside ♡</div>
+  </section>
+
+  <section class="category-strip" aria-label="Product categories">
+    <button class="category active" data-category="All"><span class="category-art art-1">♡</span>All Gifts</button>
+    <button class="category" data-category="Cute Gifts"><span class="category-art art-2">🐰</span>Cute Gifts</button>
+    <button class="category" data-category="Home Decor"><span class="category-art art-3">✿</span>Home Decor</button>
+    <button class="category" data-category="Stationery"><span class="category-art art-4">✎</span>Stationery</button>
+    <button class="category" data-category="Accessories"><span class="category-art art-5">♡</span>Accessories</button>
+    <button class="category" data-category="Mugs & Drinkware"><span class="category-art art-6">☕</span>Mugs & Drinkware</button>
+    <button class="category" data-category="Gift Sets"><span class="category-art art-7">🎁</span>Gift Sets</button>
+  </section>
+
+  <section class="shop-section" id="shop">
+    <div class="section-heading"><div><h2>Featured collection ♡</h2><p>Handpicked with love ♡</p></div><span class="product-total" id="productTotal">0 products</span></div>
+    <div class="filter-row"><select id="categoryFilter" aria-label="Filter category"><option value="All">All categories</option><option>Cute Gifts</option><option>Home Decor</option><option>Stationery</option><option>Accessories</option><option>Mugs & Drinkware</option><option>Gift Sets</option></select><select id="sortFilter" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A–Z</option></select></div>
+    <div class="product-grid" id="productGrid"><div class="empty-state">Loading the little things…</div></div>
+  </section>
+
+  <section class="vibe-section">
+    <div class="section-heading"><div><h2>Gifts for Every Vibe</h2><p>Because every moment deserves a little magic ♡</p></div></div>
+    <div class="vibe-grid">
+      <article class="vibe vibe-one"><span>For<br>Your<br>Dreams ♡</span></article>
+      <article class="vibe vibe-two"><span>For<br>Someone<br>Special ♡</span></article>
+      <article class="vibe vibe-three"><span>For<br>Your<br>Space ♡</span></article>
+      <article class="vibe vibe-four"><span>For<br>Every<br>Occasion ♡</span></article>
+      <article class="vibe vibe-five"><span>Just<br>Because ♡</span></article>
+    </div>
+  </section>
+
+  <section class="promise-row">
+    <div><b>♧</b><strong>Fast & Reliable Shipping</strong><small>To your doorstep, with love</small></div>
+    <div><b>♡</b><strong>Thoughtful Packaging</strong><small>Because details matter</small></div>
+    <div><b>♢</b><strong>Secure Payments</strong><small>Shop with confidence</small></div>
+    <div><b>♧</b><strong>Support Small Business</strong><small>Craftopia is a dream, and you make it real ♡</small></div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div><h2>Craftopia</h2><small>GIFTS · STORIES · SMILES</small><p>Little gifts. Big happiness. ♡</p></div>
+  <div><strong>Quick Links</strong><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a></div>
+  <div><strong>Visit our store</strong><p>College Rd, Bidyapur, Nalbari,<br>Majdia, Assam 781335</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=College+Rd%2C+Bidyapur%2C+Nalbari%2C+Majdia%2C+Assam+781335">Open Google Maps ↗</a></div>
+  <div><strong>Follow / Contact</strong><a target="_blank" rel="noopener" href="https://wa.me/917002082253">WhatsApp: 7002082253</a><a href="https://wa.me/917002082253?text=Hello%20Craftopia%2C%20I%20have%20a%20question." target="_blank" rel="noopener">Message us ♡</a></div>
+  <p class="copyright">© <span id="year"></span> Craftopia Assam. Made with love ♡</p>
+</footer>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-heading"><div><h2>Your Cart ♡</h2><p id="cartSubtitle">Your favourites, gathered here.</p></div><button class="icon-button" id="cartClose" aria-label="Close cart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-bottom"><div class="cart-total"><span>Estimated total</span><strong id="cartTotal">₹0</strong></div><p class="fine-print">Final availability and delivery will be confirmed on WhatsApp.</p><button class="primary-button full-width" id="checkoutButton">Order on WhatsApp ↗</button></div>
+</aside>
+
+<dialog id="ownerDialog" class="modal">
+  <form id="authForm" class="modal-panel">
+    <button type="button" class="modal-close" data-close="ownerDialog">×</button>
+    <span class="eyebrow">CRAFTOPIA ADMIN</span><h2>Owner dashboard</h2>
+    <p class="muted">Sign in with the owner account you created in Firebase Authentication to add and manage products visible to every customer.</p>
+    <label>Email<input id="ownerEmail" type="email" required autocomplete="username" placeholder="owner@example.com"></label>
+    <label>Password<input id="ownerPassword" type="password" required autocomplete="current-password" placeholder="Your password"></label>
+    <button class="primary-button full-width" type="submit">Sign in</button>
+    <p class="form-message" id="authMessage" role="status"></p>
+    <div id="adminPanel" hidden>
+      <hr><h3>Add a product</h3>
+      <label>Product name<input id="productName" required maxlength="100" placeholder="e.g. Cute Bunny Night Lamp"></label>
+      <div class="two-fields"><label>Price (₹)<input id="productPrice" type="number" min="0" step="1" required placeholder="799"></label><label>Category<select id="productCategory"><option>Cute Gifts</option><option>Home Decor</option><option>Stationery</option><option>Accessories</option><option>Mugs & Drinkware</option><option>Gift Sets</option></select></label></div>
+      <label>Available sizes (optional)<input id="productSizes" placeholder="Small, Medium, Large"></label>
+      <label>Product image<input id="productImage" type="file" accept="image/*" required></label>
+      <label>Short description<textarea id="productDescription" rows="2" placeholder="A little detail about this gift…"></textarea></label>
+      <button class="primary-button full-width" type="submit" id="saveProduct">Publish product</button>
+      <p class="form-message" id="productMessage" role="status"></p>
+      <h3>Your products</h3><div id="adminProducts" class="admin-products"></div>
+      <button type="button" id="signOutButton" class="secondary-button full-width">Sign out</button>
+    </div>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
